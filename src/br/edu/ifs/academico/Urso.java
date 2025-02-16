@@ -1,6 +1,6 @@
 package br.edu.ifs.academico;
 
-public class Urso {
+public class Urso extends Animal {
 
     private String corDoPelo;
     private boolean canSwin; //indica se o urso sabe nadar
