@@ -43,6 +43,27 @@ public class App {
                     System.out.print("Gênero: ");
                     genero = sc.next();
                     passaro.setGenero(genero);
+                    System.out.print("Tipo de vôo: ");
+                    String tipoDeVoo = sc.next();
+                    passaro.setTipoDeVoo(tipoDeVoo);
+                    System.out.print("Tamanho das asas: ");
+                    double tamanhoAsas = sc.nextDouble();
+                    passaro.setTamanhoAsas(tamanhoAsas);
+                    System.out.print("Cor das penas: ");
+                    String corDasPenas = sc.next();
+                    passaro.setCorDasPenas(corDasPenas);
+                    System.out.print("Canta? (S/N)");
+                    char resp = sc.next().toUpperCase().charAt(0);
+                    boolean canSing;
+                    if (resp == 'S') {
+                        canSing = true;
+                    } else {
+                        canSing = false;
+                    }
+                    passaro.setCanSing(canSing);
+                    System.out.print("Velocidade do vôo (km/h): ");
+                    double velocidadeVoo = sc.nextDouble();
+                    passaro.setVelocidadeVoo(velocidadeVoo);
                     listaPassaros.add(passaro);
                     break;
                 case 2:
@@ -66,6 +87,33 @@ public class App {
                     System.out.print("Gênero: ");
                     genero = sc.next();
                     cao.setGenero(genero);
+                    System.out.print("Raça: ");
+                    String raca = sc.next();
+                    cao.setRaca(raca);
+                    System.out.print("Tamanho: ");
+                    String tamanho = sc.next();
+                    cao.setTamanho(tamanho);
+                    System.out.print("Cor do pelo: ");
+                    String corDoPelo = sc.next();
+                    cao.setCorDoPelo(corDoPelo);
+                    System.out.print("Obediente? (S/N)");
+                    resp = sc.next().toUpperCase().charAt(0);
+                    boolean obediente;
+                    if (resp == 'S') {
+                        obediente = true;
+                    } else {
+                        obediente = false;
+                    }
+                    cao.setObediente(obediente);
+                    System.out.print("Habilidade de guarda? (S/N)");
+                    resp = sc.next().toUpperCase().charAt(0);
+                    boolean habilidadeGuarda;
+                    if (resp == 'S') {
+                        habilidadeGuarda = true;
+                    } else {
+                        habilidadeGuarda = false;
+                    }
+                    cao.setHabilidadeGuarda(habilidadeGuarda);
                     listaCaes.add(cao);
                     break;
                 case 4:
@@ -89,6 +137,27 @@ public class App {
                     System.out.print("Gênero: ");
                     genero = sc.next();
                     gato.setGenero(genero);
+                    System.out.print("Raça: ");
+                    raca = sc.next();
+                    gato.setRaca(raca);
+                    System.out.print("Cor do pelo: ");
+                    corDoPelo = sc.next();
+                    gato.setCorDoPelo(corDoPelo);
+                    System.out.print("Comportamento: ");
+                    String comportamento = sc.nextLine();
+                    gato.setComportamento(comportamento);
+                    System.out.print("Habilidade de caça? (S/N)");
+                    resp = sc.next().toUpperCase().charAt(0);
+                    boolean habilidadeCaca;
+                    if (resp == 'S') {
+                        habilidadeCaca = true;
+                    } else {
+                        habilidadeCaca = false;
+                    }
+                    gato.setHabilidadeCaca(habilidadeCaca);
+                    System.out.print("Ronrona em média quantas vezes por dia? ");
+                    int quantidadeRonronar = sc.nextInt();
+                    gato.setQuantidadeRonronar(quantidadeRonronar);
                     listaGatos.add(gato);
                     break;
                 case 6:
@@ -112,6 +181,24 @@ public class App {
                     System.out.print("Gênero: ");
                     genero = sc.next();
                     urso.setGenero(genero);
+                    System.out.print("Cor do pelo: ");
+                    corDoPelo = sc.next();
+                    urso.setCorDoPelo(corDoPelo);
+                    System.out.print("Pode nadar? (S/N)");
+                    resp = sc.next().toUpperCase().charAt(0);
+                    boolean canSwin;
+                    if (resp == 'S') {
+                        canSwin = true;
+                    } else {
+                        canSwin = false;
+                    }
+                    urso.setCanSwin(canSwin);
+                    System.out.print("Tipo de focinho: ");
+                    String tipoDeFocinho = sc.next();
+                    urso.setTipoDeFocinho(tipoDeFocinho);
+                    System.out.print("Tamanho: ");
+                    tamanho = sc.next();
+                    urso.setTamanho(tamanho);
                     listaUrso.add(urso);
                     break;
                 case 8:
@@ -135,6 +222,30 @@ public class App {
                     System.out.print("Gênero: ");
                     genero = sc.next();
                     cobra.setGenero(genero);
+                    System.out.print("Ambiente principal: ");
+                    String ambientePrincipal = sc.next();
+                    cobra.setAmbientePrincipal(ambientePrincipal);
+                    System.out.print("Venenosa? (S/N)");
+                    resp = sc.next().toUpperCase().charAt(0);
+                    boolean venenosa;
+                    if (resp == 'S') {
+                        venenosa = true;
+                    } else {
+                        venenosa = false;
+                    }
+                    cobra.setVenenosa(venenosa);
+                    System.out.print("Peçonhenta? (S/N)");
+                    resp = sc.next().toUpperCase().charAt(0);
+                    boolean peconhenta;
+                    if (resp == 'S') {
+                        peconhenta = true;
+                    } else {
+                        peconhenta = false;
+                    }
+                    System.out.print("Padrão de pele: ");
+                    String padraoDePele = sc.next();
+                    cobra.setPadraoDePele(padraoDePele);
+                    cobra.setPeconhenta(peconhenta);
                     listaCobras.add(cobra);
                     break;
                 case 10:

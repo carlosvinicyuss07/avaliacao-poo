@@ -4,7 +4,7 @@ public class Cao extends Animal {
 
     private String raca;
     private String tamanho;
-    private int nivelEnergia;
+    private String corDoPelo;
     private boolean obediente;
     private boolean habilidadeGuarda;
 
@@ -24,12 +24,12 @@ public class Cao extends Animal {
         this.tamanho = tamanho;
     }
 
-    public int getNivelEnergia() {
-        return nivelEnergia;
+    public String getCorDoPelo() {
+        return corDoPelo;
     }
 
-    public void setNivelEnergia(int nivelEnergia) {
-        this.nivelEnergia = nivelEnergia;
+    public void setCorDoPelo(String corDoPelo) {
+        this.corDoPelo = corDoPelo;
     }
 
     public boolean isObediente() {
