@@ -2,6 +2,10 @@ package br.edu.ifs.academico;
 
 public class Passaro extends Animal {
 
+    public Passaro(String nome) {
+        super(nome);
+    }
+
     private String tipoDeVoo;
     private double tamanhoAsas;
     private String corDasPenas;
@@ -46,5 +50,16 @@ public class Passaro extends Animal {
 
     public void setVelocidadeVoo(double velocidadeVoo) {
         this.velocidadeVoo = velocidadeVoo;
+    }
+
+    @Override
+    public String toString() {
+        return "Passaro{" +
+                "canSing=" + canSing +
+                ", tipoDeVoo='" + tipoDeVoo + '\'' +
+                ", tamanhoAsas=" + tamanhoAsas +
+                ", corDasPenas='" + corDasPenas + '\'' +
+                ", velocidadeVoo=" + velocidadeVoo +
+                "} " + super.toString();
     }
 }

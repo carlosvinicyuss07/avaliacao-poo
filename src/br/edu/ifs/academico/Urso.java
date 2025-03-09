@@ -2,6 +2,10 @@ package br.edu.ifs.academico;
 
 public class Urso extends Animal {
 
+    public Urso(String nome) {
+        super(nome);
+    }
+
     private String corDoPelo;
     private boolean canSwin; //indica se o urso sabe nadar
     private String tipoDeFocinho; //(ex:comprido, médio)
@@ -37,5 +41,15 @@ public class Urso extends Animal {
 
     public void setTamanho(String tamanho) {
         this.tamanho = tamanho;
+    }
+
+    @Override
+    public String toString() {
+        return "Urso{" +
+                "canSwin=" + canSwin +
+                ", corDoPelo='" + corDoPelo + '\'' +
+                ", tipoDeFocinho='" + tipoDeFocinho + '\'' +
+                ", tamanho='" + tamanho + '\'' +
+                "} " + super.toString();
     }
 }

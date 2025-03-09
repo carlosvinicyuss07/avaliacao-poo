@@ -27,10 +27,9 @@ public class App {
             switch (opcao) {
                 case 1:
                     System.out.println("***CADASTRAR UM NOVO PÁSSARO***");
-                    Passaro passaro = new Passaro();
                     System.out.print("Nome: ");
                     nome = sc.next();
-                    passaro.setNome(nome);
+                    Passaro passaro = new Passaro(nome);
                     System.out.print("Idade: ");
                     idade = sc.nextInt();
                     passaro.setIdade(idade);
@@ -68,13 +67,13 @@ public class App {
                     break;
                 case 2:
                     System.out.println("Listar pássaros");
+                    System.out.println(listaPassaros);
                     break;
                 case 3:
                     System.out.println("***CADASTRAR UM NOVO CÃO***");
-                    Cao cao = new Cao();
                     System.out.print("Nome: ");
                     nome = sc.next();
-                    cao.setNome(nome);
+                    Cao cao = new Cao(nome);
                     System.out.print("Idade: ");
                     idade = sc.nextInt();
                     cao.setIdade(idade);
@@ -118,13 +117,13 @@ public class App {
                     break;
                 case 4:
                     System.out.println("Listar cães");
+                    System.out.println(listaCaes);
                     break;
                 case 5:
                     System.out.println("***CADASTRAR UM NOVO GATO***");
-                    Gato gato = new Gato();
                     System.out.print("Nome: ");
                     nome = sc.next();
-                    gato.setNome(nome);
+                    Gato gato = new Gato(nome);
                     System.out.print("Idade: ");
                     idade = sc.nextInt();
                     gato.setIdade(idade);
@@ -162,13 +161,13 @@ public class App {
                     break;
                 case 6:
                     System.out.println("Listar gatos");
+                    System.out.println(listaGatos);
                     break;
                 case 7:
                     System.out.println("***CADASTRAR UM NOVO URSO***");
-                    Urso urso = new Urso();
                     System.out.print("Nome: ");
                     nome = sc.next();
-                    urso.setNome(nome);
+                    Urso urso = new Urso(nome);
                     System.out.print("Idade: ");
                     idade = sc.nextInt();
                     urso.setIdade(idade);
@@ -203,13 +202,13 @@ public class App {
                     break;
                 case 8:
                     System.out.println("Listar ursos");
+                    System.out.println(listaUrso);
                     break;
                 case 9:
                     System.out.println("***CADASTRAR UMA NOVA COBRA***");
-                    Cobra cobra = new Cobra();
                     System.out.print("Nome: ");
                     nome = sc.next();
-                    cobra.setNome(nome);
+                    Cobra cobra = new Cobra(nome);
                     System.out.print("Idade: ");
                     idade = sc.nextInt();
                     cobra.setIdade(idade);
@@ -250,6 +249,7 @@ public class App {
                     break;
                 case 10:
                     System.out.println("Listar cobras");
+                    System.out.println(listaCobras);
                     break;
                 default:
                     System.out.println("Opção inválida!");

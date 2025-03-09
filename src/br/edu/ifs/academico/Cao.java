@@ -2,6 +2,10 @@ package br.edu.ifs.academico;
 
 public class Cao extends Animal {
 
+    public Cao(String nome) {
+        super(nome);
+    }
+
     private String raca;
     private String tamanho;
     private String corDoPelo;
@@ -46,5 +50,16 @@ public class Cao extends Animal {
 
     public void setHabilidadeGuarda(boolean habilidadeGuarda) {
         this.habilidadeGuarda = habilidadeGuarda;
+    }
+
+    @Override
+    public String toString() {
+        return "Cao{" +
+                "corDoPelo='" + corDoPelo + '\'' +
+                ", raca='" + raca + '\'' +
+                ", tamanho='" + tamanho + '\'' +
+                ", obediente=" + obediente +
+                ", habilidadeGuarda=" + habilidadeGuarda +
+                "} " + super.toString();
     }
 }

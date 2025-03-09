@@ -2,6 +2,10 @@ package br.edu.ifs.academico;
 
 public class Gato extends Animal {
 
+    public Gato(String nome) {
+        super(nome);
+    }
+
     private String raca;
     private String corDoPelo;
     private String comportamento;
@@ -46,5 +50,16 @@ public class Gato extends Animal {
 
     public void setQuantidadeRonronar(int quantidadeRonronar) {
         this.quantidadeRonronar = quantidadeRonronar;
+    }
+
+    @Override
+    public String toString() {
+        return "Gato{" +
+                "comportamento='" + comportamento + '\'' +
+                ", raca='" + raca + '\'' +
+                ", corDoPelo='" + corDoPelo + '\'' +
+                ", habilidadeCaca=" + habilidadeCaca +
+                ", quantidadeRonronar=" + quantidadeRonronar +
+                "} " + super.toString();
     }
 }

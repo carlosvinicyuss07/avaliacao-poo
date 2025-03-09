@@ -2,6 +2,10 @@ package br.edu.ifs.academico;
 
 public class Animal {
 
+    public Animal(String nome) {
+        this.nome = nome;
+    }
+
     private String nome;
     private int idade;
     private String especie;
@@ -46,5 +50,16 @@ public class Animal {
 
     public void setGenero(String genero) {
         this.genero = genero;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", especie='" + especie + '\'' +
+                ", peso=" + peso +
+                ", genero='" + genero + '\'' +
+                '}';
     }
 }
